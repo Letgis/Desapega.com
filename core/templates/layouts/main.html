@@ -1,15 +1,20 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
     <head>
-        <meta charset="utf-8">
-        
         <title>Desapega.com</title>
+        
+        <meta charset="utf-8">
 
-        <link rel="stylesheet" href="">
     </head>
     <body>
+        {% include 'includes/navbar.html' %}
 
-        <script src="" async defer></script>
+
+        {% block content %}
+        {% endblock %}
+	    
+
+        {% include 'includes/footer.html' %}
     </body>
 </html>
