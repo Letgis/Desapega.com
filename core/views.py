@@ -5,5 +5,5 @@ from django.template import loader
 
 def homepage(request):
     context = {'segment': 'index'}
-    html_template = loader.get_template('homepage.html')
+    html_template = loader.get_template('pages/homepage.html')
     return HttpResponse(html_template.render(context, request))
