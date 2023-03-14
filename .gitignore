@@ -1,0 +1,4 @@
+
+.DS_Store
+_env
+db.sqlite3
