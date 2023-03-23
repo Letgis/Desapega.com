@@ -49,7 +49,7 @@ ROOT_URLCONF = 'desapega_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': os.path.join(DIRNAME, 'templates/'),
+        'DIRS': os.path.join(DIRNAME, 'templates'),
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
