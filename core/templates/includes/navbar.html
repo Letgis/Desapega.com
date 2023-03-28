@@ -1,7 +1,7 @@
 {% load static %}
 <nav id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid ">
-      <a class="navbar-brand" href="#"> <img src="{% static 'core/images/NavIcon.ico' %}" alt="Logo-da-empresa" id="brand"> </a>
+      <a class="navbar-brand" href="#"> <img src="{% static 'core/images/NavIcon1.png' %}" alt="Logo-da-empresa" id="brand"> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Cadastrar</a></li>
               <hr>
-              <li><a class="dropdown-item" href="#">Entrar</a></li>
+              <li><a class="dropdown-item" href="{% url 'login' %}">Entrar</a></li>
             </ul>
           </li>
         </ul>

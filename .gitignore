@@ -4,3 +4,5 @@ _env
 db.sqlite3
 launch.json
 env
+.vscode
+node_modules

@@ -31,12 +31,11 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="{% static 'core/css/index.css' %}"
+      href="{% static 'core/scss/styles.css' %}"
     />
   </head>
   <body>
-    {% include 'includes/navbar.html' %} {% block content %} {% endblock %}
-    {%include 'includes/footer.html' %}
+    {% block content %} {% endblock %}
 
     <!-- Bootstrap -->
     <script
@@ -44,5 +43,11 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- scripts -->
+    <script src="{% static 'core/js/login.js' %}"></script>
   </body>
 </html>
