@@ -15,6 +15,15 @@
       type="image/x-icon"
     />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -33,6 +42,26 @@
       type="text/css"
       href="{% static 'core/css/index.css' %}"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'core/css/normalize.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'core/css/vendor.css' %}"
+    />
+
+    <!-- Css da Grid -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'core/css/templatemo-hexashop.css' %}"
+    />
+
+    <!-- Script-->
+    <script src="{% static 'core/js/modernizr.js' %}"></script>
   </head>
   <body>
     {% include 'includes/navbar.html' %} {% block content %} {% endblock %}
@@ -44,5 +73,9 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <script src="{% static 'core/js/jquery-1.11.0.min.js' %}"></script>
+    <script src="{% static 'core/js/plugins.js' %}"></script>
+    <script src="{% static 'core/js/script.js' %}"></script>
   </body>
 </html>

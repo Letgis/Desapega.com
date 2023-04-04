@@ -1,36 +1,117 @@
 {% load static %}
-<nav id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid ">
-      <a class="navbar-brand" href="#"> <img src="{% static 'core/images/NavIcon1.png' %}" alt="Logo-da-empresa" id="brand"> </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Publicar</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <i class="bi bi-person icone"></i>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Cadastrar</a></li>
-              <hr>
-              <li><a class="dropdown-item" href="{% url 'login' %}">Entrar</a></li>
+
+<div id="header-wrap">
+  <div class="top-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="social-links">
+            <ul>
+              <li>
+                <a href="#"><i class="bi bi-facebook icon-size"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter icon-size"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-youtube icon-size"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-instagram icon-size"></i></a>
+              </li>
             </ul>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Busque no desapega" aria-label="Search">
-          <button class="btn Nav-button" type="submit"><i class="bi bi-search"></i></button>
-        </form>
+          </div>
+          <!--social-links-->
+        </div>
+        <div class="col-md-6">
+          <div class="right-element">
+            <a href="{% url 'login' %}" class="user-account for-buy"
+              ><i class="fa-solid fa-user"></i><span>Conta</span></a
+            >
+            <a href="#" class="cart for-buy"
+              ><i class="fa-solid fa-cart-shopping"></i
+              ><span>Carrinho: (0$)</span>
+            </a>
+
+            <div class="action-menu">
+              <div class="search-bar">
+                <a
+                  href="#"
+                  class="search-button search-toggle"
+                  data-selector="#header-wrap"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <form role="search" method="get" class="search-box">
+                  <input
+                    class="search-field text search-input"
+                    placeholder="Search"
+                    type="search"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--top-right-->
+        </div>
       </div>
     </div>
-  </nav>
+  </div>
+  <!--top-content-->
+
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="main-logo">
+            <a href="#"
+              ><img
+                id="brand"
+                src="{% static 'core/images/Logo.png' %}"
+                alt="logo"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col-md-10">
+          <nav id="navbar">
+            <div class="main-menu stellarnav">
+              <ul class="menu-list">
+                <li class="menu-item active">
+                  <a href="{% url 'homepage' %}" data-effect="Home">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#about" class="nav-link" data-effect="About">Sobre</a
+                  >
+                </li>
+                <li class="menu-item has-sub">
+                  <a href="#pages" class="nav-link" data-effect="Pages">Categorias</a>
+
+                  <ul>
+                    <li class="active"><a href="about.html">Eletrônicos</a></li>
+                    <li><a href="styles.html">Esporte</a></li>
+                    <li><a href="blog.html">Imóveis</a></li>
+                    <li><a href="single-post.html">Moda</a></li>
+                    <li><a href="single-post.html">Móveis</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#contact" class="nav-link" data-effect="Contact">Contato</a>
+                </li>
+                <li class="menu-item">
+                  <a href="{% url 'create_product' %}" class="nav-link" data-effect="Contact">Publicar</a>
+                </li>
+              </ul>
+
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>

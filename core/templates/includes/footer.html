@@ -1,38 +1,30 @@
+{% load static %}
+
 <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="footer-col">
-          <h4>Desapega.com</h4>
-          <ul>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Perguntas frequentes</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Publicar</a></li>
-            <li><a href="#">Cadastrar</a></li>
-            <li><a href="#">Entrar</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Categorias</h4>
-          <ul>
-            <li><a href="#">Eletrônicos</a></li>
-            <li><a href="#">Veículos</a></li>
-            <li><a href="#">Móveis</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Acompanhe-nos</h4>
-          <div class="social-links">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <ul class="social-icon">
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+        <a href="index.html"><img id='brand-footer' src="{% static 'core/images/Picture1.png' %}" alt="logo"></a>
+    </li>
+  </ul>
+  <ul class="social-icon">
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+        <a href="#"><i class="bi bi-facebook footer-icons"></i></a>
+    </li>
+    <li>
+      <a href="#"><i class="bi bi-twitter footer-icons"></i></a>
+    </li>
+    <li>
+      <a href="#"><i class="bi bi-instagram footer-icons"></i></a>
+    </li>
+    <li>
+      <a href="#"><i class="bi bi-youtube footer-icons align"></i></a>
+    </li>
+  </ul>
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Sobre</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Dúvidas</a></li>
+    <li class="menu__item align"><a class="menu__link" href="#">Contato</a></li>
+  </ul>
+  <p>&copy;2023 DESAPEGA.COM</p>
+</footer>
