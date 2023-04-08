@@ -1870,6 +1870,7 @@ span.prev-price {
   width: 100%;
   border-radius: 16px;
   height: 250px;
+  object-fit: contain
 }
 .product-style button.add-to-cart {
   background: #000;
