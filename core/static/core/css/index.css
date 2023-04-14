@@ -25,7 +25,6 @@
 /* Fonts */
 :root {
   --body-font: "Raleway", sans-serif;
-  --heading-font: "Prata", Georgia, serif;
   --secondary-font: "Playfair Display", Georgia, serif;
 }
 
@@ -200,11 +199,7 @@ h5,
   font-size: 0.83em;
   line-height: 1.25;
 }
-h6,
-.h6 {
-  font-size: 0.67em;
-  line-height: 1.1;
-}
+
 h1 a,
 h2 a,
 h3 a,
@@ -1173,6 +1168,7 @@ button {
   font-weight: 500;
   line-height: 1;
   margin-bottom: 75px;
+  --heading-font: "Prata", Georgia, serif;
 }
 .section-title.divider {
   width: 100%;
@@ -1339,7 +1335,8 @@ img.post-image {
   margin-bottom: 0;
   font-weight: 300;
   padding-left: 20px;
-  background: #efeee8;
+  background: #efeee8 !important;
+  border-color: #efeee8 !important;
 }
 
 .action-menu .side-nav-bar .menu-btn a,
@@ -1870,31 +1867,33 @@ span.prev-price {
   width: 100%;
   border-radius: 16px;
   height: 250px;
-  object-fit: contain
+  object-fit: contain;
+  background-color:#efeee8;
 }
 .product-style button.add-to-cart {
   background: #000;
   color: #fff;
-  width: 70%;
+  width: 90%;
+  height: 30px;
   text-transform: uppercase;
   text-align: center;
-  line-height: 3;
+  line-height: 2px;
   position: relative;
   bottom: 250px;
-  left: 40px;
-  z-index: 9;
+  left: 10px;
+  border: 2px solid #ffffff;
   opacity: 0;
   transition: 0.5s ease-out;
 }
 .product-style:hover button.add-to-cart {
-  bottom: 280px;
+  bottom: 250px;
   opacity: 1;
   border-radius: 16px;
-  background-color: #daa556;
+  background-color: #ff9100ba;
 }
 .product-style figcaption {
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .product-style figcaption > h3 {

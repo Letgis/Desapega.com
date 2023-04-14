@@ -1,4 +1,8 @@
-
+.Teste{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 
 #container-cart {
     margin: 0px auto 0px auto !important; 
@@ -188,7 +192,8 @@ button:focus {
     }
 
     .mob-text {
-        font-size: 13px;
+        font-size: 23px;
+        font-family:Arial, Helvetica, sans-serif !important;
     }
 
     .pad-left {
