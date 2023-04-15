@@ -43,14 +43,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'desapega_project.urls'
+ROOT_URLCONF = 'Prime_Store.urls'
 
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS':[ os.path.join(DIRNAME, 'templates'),
-              'c:\\users\\renan\\documents\\trabalho\\desapega.com'      
+              'c:\\users\\renan\\documents\\trabalho\\Prime_Store'      
             ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -64,7 +64,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'desapega_project.wsgi.application'
+WSGI_APPLICATION = 'Prime_Store.wsgi.application'
 
 
 # Database

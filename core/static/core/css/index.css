@@ -1860,15 +1860,12 @@ span.prev-price {
   width: 33.33%;
 }
 .product-style img.product-item {
-  background: #efeee8;
-  border: 1px solid #eae8df;
   padding: 1%;
   cursor: pointer;
   width: 100%;
   border-radius: 16px;
   height: 250px;
   object-fit: contain;
-  background-color:#efeee8;
 }
 .product-style button.add-to-cart {
   background: #000;
