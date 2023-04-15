@@ -192,8 +192,9 @@ button:focus {
     }
 
     .mob-text {
-        font-size: 23px;
+        font-size: 50px !important;
         font-family:Arial, Helvetica, sans-serif !important;
+
     }
 
     .pad-left {
