@@ -3,7 +3,7 @@ import uuid
 
 class Product(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True, unique=True,  editable=False)
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=120)
     description = models.TextField(max_length=500)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     image = models.ImageField(upload_to='products')
