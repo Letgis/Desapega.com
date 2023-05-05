@@ -18,6 +18,11 @@ def CheckoutCart(request):
     html_template = loader.get_template('pages/CheckoutCart.html')
     return HttpResponse(html_template.render(context, request))
 
+def AllProducts(request):
+    context = {'segment': 'index'}
+    html_template = loader.get_template('pages/AllProducts.html')
+    return HttpResponse(html_template.render(context, request))
+
 def create_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST)

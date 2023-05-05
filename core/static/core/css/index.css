@@ -1952,3 +1952,8 @@ span.prev-price {
   position: relative;
   bottom: 0.3rem;
 }
+
+/*----- All Products -----*/
+.ContainerAllProducts{
+  padding: 5% 10% 10% 10% ;
+}
