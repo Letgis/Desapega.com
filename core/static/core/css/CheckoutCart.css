@@ -154,18 +154,19 @@ button:focus {
     width: 40% !important;
 }
 
-.btn-blue {
+.concluir-pedido{
     border: none;
     border-radius: 10px;
     background-color: #c47405;
     color: #fff;
-    padding: 8px 15px;
+    padding: 15px 15px;
     margin: 20px 0px;
     cursor: pointer;
+    border-bottom: 5px solid white;
     box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.478);
 }
 
-.btn-blue:hover {
+.concluir-pedido:hover {
     background-color: #c47505cc;
     color: #fff;
 }

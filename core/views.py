@@ -23,6 +23,11 @@ def AllProducts(request):
     html_template = loader.get_template('pages/AllProducts.html')
     return HttpResponse(html_template.render(context, request))
 
+def SingleProduct(request):
+    context = {'segment': 'index'}
+    html_template = loader.get_template('pages/SingleProduct.html')
+    return HttpResponse(html_template.render(context, request))
+
 def create_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST)
