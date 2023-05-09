@@ -8,6 +8,7 @@
                 <div class="container-products-cart">
                     <div class="col-4">
                         <div class="row d-flex">
+                            <i class="bi bi-x-circle" style="justify-content: center; display:flex"></i>
                             <div class="book">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/61m4mOcLyVL._AC_UL450_SR450,320_.jpg" class="book-img">
                             </div>
@@ -39,6 +40,7 @@
                 <div class="container-products-cart">
                     <div class="col-4">
                         <div class="row d-flex">
+                            <i class="bi bi-x-circle" style="justify-content: center; display:flex"></i>
                             <div class="book">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/51tO3g-vKOL._AC_UL450_SR450,320_.jpg" class="book-img">
                             </div>
@@ -69,6 +71,7 @@
                 <div class="container-products-cart">
                     <div class="col-4">
                         <div class="row d-flex">
+                            <i class="bi bi-x-circle" style="justify-content: center; display:flex"></i>
                             <div class="book">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/51AkWsVPbWL._AC_UL450_SR450,320_.jpg" class="book-img">
                             </div>
@@ -81,9 +84,10 @@
                     <div class="my-auto col-7">
                         <div class="row text-right">
                             <div class="col-4">
-                                <div class="row d-flex px-3">
+                                <div class="row d-flex">
                                     <input type='number' min="1" max="100" value="1" class="qtd-products">
                                 </div>
+                                
                             </div>
                             <div class="col-4">
                                 <h6 class="mob-text">Fornecedor</h6>
@@ -101,15 +105,15 @@
                 <div class="card">
                     <div class="row">
                         <div class="col-lg-3 radio-group">
-                            <div class="row d-flex px-3 radio">
+                            <div class="row d-flex px-3 radio" name="master"  onclick="selectCard('master')">
                                 <img class="pay" src="https://logodownload.org/wp-content/uploads/2014/07/mastercard-logo.png">
                                 <p class="my-auto">Master Card</p>
                             </div>
-                            <div class="row d-flex px-3 radio gray">
+                            <div class="row d-flex px-3 radio gray" name="visa" onclick="selectCard('visa')">
                                 <img class="pay" src="https://img.freepik.com/icones-gratis/visto_318-321118.jpg">
                                 <p class="my-auto">Visa</p>
                             </div>
-                            <div class="row d-flex px-3 radio gray mb-3">
+                            <div class="row d-flex px-3 radio gray mb-3" name="paypal" onclick="selectCard('paypal')">
                                 <img class="pay" src="https://img.freepik.com/icones-gratis/paypal_318-674245.jpg?w=2000">
                                 <p class="my-auto">PayPal</p>
                             </div>
